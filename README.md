@@ -118,8 +118,8 @@ The test is split into 2 sections presenting the need for back end & front end:
 >
 > Please refer to the [installation instructions](./installation.md) to get things up and running.
 >
-> In terms of what I would have done given more time - testing the frontend through JEST, setting up success/failure/malformed tests 
-> in PHPUnit for the API, and creating better error message responses from the API.
+> In terms of what I would have done given more time and fewer work commitments - testing the frontend through JEST, setting up 
+> success/failure/malformed tests in PHPUnit for the API, and creating better error message responses from the API.
 >
 > One of the design decisions I made was to not use SASS/LESS in the frontend app. I do have familiarity with
 > this workflow from my time at Mayden Academy however given the use of React for the front end, and its component-based 
