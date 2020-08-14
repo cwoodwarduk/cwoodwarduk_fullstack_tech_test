@@ -1,6 +1,3 @@
-f<p align="center">
-    <img alt="Pod Point" height="150" src="./support/logo.png" title="Pod Point" width="498" />
-</p>
 
 # Full stack coding test
 
