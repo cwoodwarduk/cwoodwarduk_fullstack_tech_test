@@ -1,6 +1,3 @@
-<p align="center">
-    <img alt="Pod Point" height="150" src="../support/logo.png" title="Pod Point" width="498" />
-</p>
 
 # Front end Part
 
@@ -8,46 +5,12 @@
 
 **Table of Contents**
 
-* [Front end dev environment](#frontend-dev-environment)
-    * [Accessing the API](#frontend-dev-environment--accessing-api)
 * [The task](#the-task)
     * [To do](#the-task--to-do)
     * [Bonus](#the-task--bonus) (optional)
 
 ***
 
-<a id="frontend-dev-environment"></a>
-## Front end dev environment
-
-The front end container reads from the `front/public` folder.
-
-This is the section starting the front end container in `bin/docker-run.sh` script:
-
-```bash
-docker run -d --name podpoint-front \
-    -p 8080:80 \
-    -w /var/www/html/ \
-    -v ${FRONT_BOOTSTRAP_SCRIPT_PATH}:/bin/dev-start-front.sh \
-    -v ${PROJECT_DIR}/front/public:/var/www/html/ \
-    -it fauria/lamp bash /bin/dev-start-front.sh
-```
-
-The container will initialise by running the following commands:
-```bash
-npm install
-npm run start
-```
-
-<a id="frontend-dev-environment--accessing-api"></a>
-### Accessing the API
-
-By default, the front end container won't be able to call the API container due to CORS issues.
-
-You bypass this by using the following browser extensions:
-  * chrome extension: [https://chrome.google.com/webstore/detail/allow-control-allow-origi/nlfbmbojpeacfghkpbjhddihlkkiljbi](https://chrome.google.com/webstore/detail/allow-control-allow-origi/nlfbmbojpeacfghkpbjhddihlkkiljbi)
-  * firefox extension: [https://addons.mozilla.org/en-US/firefox/addon/cors-everywhere/](https://addons.mozilla.org/en-US/firefox/addon/cors-everywhere/)
-
-<a id="the-task"></a>
 ## The task
 
 We’re keen to move the entire functionality of our Native App into a web application, mirroring the design layout, colour guide and iconography.
