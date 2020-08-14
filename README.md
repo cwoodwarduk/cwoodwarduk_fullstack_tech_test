@@ -2,27 +2,19 @@ f<p align="center">
     <img alt="Pod Point" height="150" src="./support/logo.png" title="Pod Point" width="498" />
 </p>
 
-# Pod Point - Full stack coding test
+# Full stack coding test
 
-Hi and welcome to our coding test for joining the Pod Point Software Team!
+Hi and welcome to our coding test for joining our Software Team!
 
 ***
 
 **Table of Contents**
 
 * [Presentation](#presentation)
-* [Prerequisites](#prerequisites)
-* [About your implementation](#about-your-implementation)
-* [Your dev environment](#your-dev-environment)
 * [The task](#the-task)
 * [About you](#about-you)
-    * [Your comments](#your-comments) (optional)
 
 ***
-
-<p align="center">
-    <strong>IMPORTANT: Publishing your test on a public repository would render an automatic disqualification</strong>
-</p>
 
 ***
 
@@ -48,39 +40,6 @@ Design:
     </a>
 </p>
 
-<a id="prerequisites"></a>
-## Prerequisites
-
-If you're using Mac OS, you will need:
-* You will need to install [Docker](https://store.docker.com/editions/community/docker-ce-desktop-mac)
-
-If you're using windows, you will need:
-* [Docker toolbox](https://docs.docker.com/toolbox/toolbox_install_windows/) to use Docker and creating containers under windows
-* put this whole folder inside `C/Users/Public` (to avoid having volume mounting issues)
-
-<a id="about-your-implementation"></a>
-## About your implementation
-
-* Fill the [About you](#about-you) section below.
-* If you have any notes to add to your test, please add them in the [Your comments](#your-comments) section below.
-* Send a zip file with your completed entry to [peter.ward@pod-point.com](mailto:peter.ward@pod-point.com).
-
-<a id="your-dev-environment"></a>
-## Your dev environment
-
-Once docker is downloaded, run the newly installed docker application, and wait for the message ‘Docker is now up and running’ to appear on the docker window.
-
-We've prepared a docker environment for this test.
-
-All you have to do, is run `./bin/docker-run.sh` and it will download all the relevant modules for each of the stacks and then spin up 3 containers:
-* `podpoint-api` (for back end work, accessible on [http://localhost:8000/](http://localhost:8000/))
-* `podpoint-api-docs` (for API documentation, accessible on [http://localhost:8001/](http://localhost:8001/))
-* `podpoint-front` (for front end work, accessible on [http://localhost:8080/](http://localhost:8080/))
-
-> **NOTE: If using Windows & Docker toolbox, run `docker-machine ip` to get the IP of your docker containers, then use this IP instead of `localhost` followed by the same ports as described above**
-*(e.g. IP is `192.168.99.100`, API docs container will be accessible on [http://192.168.99.100:8001](http://192.168.99.100:8001))*
-
-<a id="the-task"></a>
 ## The task
 
 We need to build a very simple application that will be able to handle our units and give the ability to start/end a charge on a unit.
@@ -104,32 +63,5 @@ The test is split into 2 sections presenting the need for back end & front end:
 
 * **First name:** `Calum`
 * **Last name:** `Woodward`
-
-
-<a id="your-comments"></a>
-### Your comments (optional)
-
-> As Sophie may have made you aware in my request to use my own environment - the machine given to me by work (my only machine)
-> had serious problems running the Docker containers given in the original tech test package. As we do not use virtualisation in
-> my current role (they use environments set up on AWS), I did my best to find an environment that worked on my machine and, after Docker, 
-> Homestead and MAMP didn't work, I had to settle on Valet which would serve the API - however proxying still wouldn't work. Hence the
-> use of middleware to circumvent CORS issues (Laravel's native Fruitcake middleware for this didn't suffice). I should stress that this
-> is definitely not what I would do usually!
->
-> Please refer to the [installation instructions](./installation.md) to get things up and running.
->
-> In terms of what I would have done given more time and fewer work commitments - testing the frontend through JEST, setting up 
-> success/failure/malformed tests in PHPUnit for the API, and creating better error message responses from the API.
->
-> One of the design decisions I made was to not use SASS/LESS in the frontend app. I do have familiarity with
-> this workflow from my time at Mayden Academy however given the use of React for the front end, and its component-based 
-> architecture, there was less of a use case for SASS/LESS given mixins and nesting are effectively handled by
-> the component-specific styling of React.  
-
-***
-
-<p align="center">
-    <strong>IMPORTANT: Publishing your test on a public repository would render an automatic disqualification</strong>
-</p>
 
 ***
