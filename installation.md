@@ -7,7 +7,7 @@ this test would be much appreciated!
 
 NOTES: 
 
-The API was developed using a Laravel Valet implementation due to issues with my work machine using Docker. In order to get Valet to serve the api I had to implement some custom middleware to set the right CORS permissions to allow cross-origin requests between
+The API was developed using a Laravel Valet implementation due to issues with my work machine using Docker. In order to get Valet to serve the API I had to implement some custom middleware to set the right CORS permissions to allow cross-origin requests between
 this API and the React frontend application. Unfortunately this is the only implementation I could get working on my machine given time constraints!
 
 ## Installation - Frontend
