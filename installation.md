@@ -61,7 +61,7 @@ Once this is completed you can cd into the `/fullstack-test-master/api` director
 $ valet link api
 ```
 
-The Podpoint API should now be served via http://api.test . This URL will work with Postman. However you will need to install 
+The API should now be served via http://api.test . This URL will work with Postman. However you will need to install 
 a browser plugin as an additional dependency for the handling of cross-origin CORS requests between the frontend and the API. 
 I recommend using `Moesif Origin & CORS Changer` for Firefox & Chrome.
 
@@ -85,7 +85,7 @@ DB_PASSWORD=
 
 ## Routes
 
-As per the Podpoint tech test specification, the following routes are accessible:
+As per the tech test specification, the following routes are accessible:
 
 ### GET
 
