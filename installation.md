@@ -1,5 +1,5 @@
 
-# Podpoint Fullstack Tech Test
+# Full Stack Tech Test
 
 I took the opportunity with this tech test to use it as a learning opportunity to deepen my knowledge of React/Redux, 
 as it's a stack I've only base familiarity with and I really wanted to give it go. Any feedback you have in review of 
