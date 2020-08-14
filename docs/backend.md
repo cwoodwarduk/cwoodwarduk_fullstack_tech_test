@@ -5,8 +5,6 @@
 
 **Table of Contents**
 
-* [API dev environment](#api-dev-environment)
-    * [Accessing the database](#api-dev-environment--accessing-db)
 * [The task](#the-task)
     * [Database](#the-task--db)
     * [API](#the-task--api)
