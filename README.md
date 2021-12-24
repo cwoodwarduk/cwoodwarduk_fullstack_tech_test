@@ -27,21 +27,11 @@ Think about your markup and CSS in terms of re-usability and maintainability acr
 
 You should be able to produce the work with a high quality finish in an acceptable amount of time.
 
-Design:
-
-<p align="center">
-    <a href="./support/design.png">
-        <img alt="Design low res" height="600" src="./support/design-low.png" title="Design low res" width="337" />
-        <br />
-        View High Resolution
-    </a>
-</p>
-
 ## The task
 
 We need to build a very simple application that will be able to handle our units and give the ability to start/end a charge on a unit.
 
-For this test you will need to implement this API, and build a simple frontend to list units & interact with units (start/stop a charge).
+For this test you will need to build an API, and build a simple frontend to list units & interact with units (start/stop a charge).
 
 The test is split into 2 sections presenting the need for back end & front end:
 * [see back end details](./docs/backend.md)
