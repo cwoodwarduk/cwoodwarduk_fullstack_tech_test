@@ -2,13 +2,28 @@
 # Full Stack Tech Test
 
 I took the opportunity with this tech test to use it as a learning opportunity to deepen my knowledge of React/Redux, 
-as it's a stack I've only base familiarity with and I really wanted to give it go. Any feedback you have in review of 
+as it is a stack I've only base familiarity with and I really wanted to give it go. Any feedback you have in review of 
 this test would be much appreciated! 
 
-NOTES: 
+## Setup - docker containers
 
-The API was developed using a Laravel Valet implementation due to issues with my work machine using Docker. In order to get Valet to serve the API I had to implement some custom middleware to set the right CORS permissions to allow cross-origin requests between
-this API and the React frontend application. Unfortunately this is the only implementation I could get working on my machine given time constraints!
+If you are using Mac OS:
+* You will need to install [Docker](https://store.docker.com/editions/community/docker-ce-desktop-mac)
+
+If you are using Windows:
+* [Docker toolbox](https://docs.docker.com/toolbox/toolbox_install_windows/) to use Docker and creating containers under windows
+* put this whole folder inside `C/Users/Public` (to avoid having volume mounting issues)
+
+Once docker is downloaded, run the newly installed docker application, and wait for the message ‘Docker is now up and running’ to appear on the docker window.
+
+Now, from the top-level folder of the project, run `./bin/docker-run.sh` and it will download all the relevant images for each of the stacks and then spin up 3 containers:
+* `car-charge-points-api` (for back end work, accessible on [http://localhost:8000/](http://localhost:8000/))
+* `car-charge-points-api-docs` (for API documentation, accessible on [http://localhost:8001/](http://localhost:8001/))
+* `car-charge-points-front` (for front end work, accessible on [http://localhost:8080/](http://localhost:8080/))
+
+**NOTE: If using Windows & Docker toolbox, run `docker-machine ip` to get the IP address of your docker containers, then use this IP address instead of `localhost`, followed by the same ports as described above**
+*(e.g. IP is `192.168.99.100`, API docs container will be accessible on [http://192.168.99.100:8001](http://192.168.99.100:8001))*
+
 
 ## Installation - Frontend
 
@@ -42,37 +57,12 @@ $ brew install php
 
 Ensure **[Composer](https://getcomposer.org/)** is installed and up-to-date. 
 
-Install Valet with Composer via:
- ```bash 
-$ composer global require laravel/valet 
-```
-
-Make sure the `~/.composer/vendor/bin` directory is in your system's "PATH".
-
-Run the installation via: 
-
-```bash 
-$ valet install
-```
-
-Once this is completed you can cd into the `/fullstack-test-master/api` directory and the following command to create a Valet symlink:
-
-```bash
-$ valet link api
-```
-
-The API should now be served via http://api.test . This URL will work with Postman. However you will need to install 
-a browser plugin as an additional dependency for the handling of cross-origin CORS requests between the frontend and the API. 
-I recommend using `Moesif Origin & CORS Changer` for Firefox & Chrome.
-
-Please ensure that whatever browser plugin you use that it is turned on before attempting to use the app.
-
 ## Setting up the Database
 
 Dummy data can be seeded through Artisan or, for simplicity, dummy data has been provided as an SQL dump in the 
 `api/database/dummyData` directory.
 
-In order to connect to a DB, open your .env file and alter the following section to match the local MySQL database that you will use:
+In order to connect to the DB, open your .env file and alter the following section to match the local MySQL database that you will use:
 
 ```php
 DB_CONNECTION=mysql

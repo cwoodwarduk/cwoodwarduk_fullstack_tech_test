@@ -23,22 +23,14 @@ For this test you will need to implement this one page application (screen shown
 * A charge is currently running on the Unit -> The unit status is `Charging`.
   * An orange `Stop` button is shown to allow a user to stop the charge.
 * The total number of charges on this unit is displayed at the bottom of each unit item.  
-  
 
-<p align="center">
-    <a href="../support/design.png">
-        <img alt="Design low res" height="600" src="../support/design-low.png" title="Design low res" width="337" />
-        <br />
-        View High Resolution
-    </a>
-</p>
 
 <a id="the-task--to-do"></a>
 ### To do
 
-We’d like you to take this simple screen, and:
+We’d like you to:
 * Supply all of your source files.
-* Using a mobile first approach, make it responsive.
+* Make it responsive.
 * Markup the elements into an HTML structure, with associated stylesheet files.
 * Make use of SASS/LESS (whichever is your favourite).
 * Prepare a `start` npm task in order to compile the CSS & JS inside the `front/public` folder with a task runner (such as Gulp or Webpack).
